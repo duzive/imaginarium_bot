@@ -1,10 +1,9 @@
 import json
-from vk_maria.longpoll.filters import AbstractFilter
+from vk_maria.dispatcher.filters import AbstractFilter
 from vk_maria import types
 
 
 class CheckFilter(AbstractFilter):
-
     def __init__(self, payload=None, text=None, prefix=None):
         self.payload = payload
         self.text = text
